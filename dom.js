@@ -40,9 +40,9 @@
 
 // GET ELEMENTS BY CLASS NAME
 
-var items = document.getElementsByClassName('list-group-item');
-console.log(items);
-console.log(items[1]);
+// var items = document.getElementsByClassName('list-group-item');
+// console.log(items);
+// console.log(items[1]);
 // items[1].textContent='hello2';
 // items[1].style.fontWeight = 'bold';
 // items[1].style.backgroundColor = 'yellow';
@@ -53,8 +53,22 @@ console.log(items[1]);
 //     items[i].style.backgroundColor='grey';
 // }
 
-items[2].style.backgroundColor = 'green';
+// items[2].style.backgroundColor = 'green';
 
-for(let i=0;i<items.length;i++){
-    items[i].style.fontWeight = 'bold';
-}
+// for(let i=0;i<items.length;i++){
+//     items[i].style.fontWeight = 'bold';
+// }
+
+// GET ELEMENTS BY TAG NAME
+var li = document.getElementsByTagName('li');
+console.log(li);
+// li[1].textContent='hello';
+// li[1].style.fontWeight='bold';
+// li[1].style.backgroundColor = 'yellow';
+
+// for(var i=0;i<li.length;i++){
+//     li[i].style.backgroundColor = 'red';
+// }
+
+li[4].style.fontWeight ='bold';
+li[4].style.color='green';
