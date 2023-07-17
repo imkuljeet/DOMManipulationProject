@@ -33,7 +33,28 @@
 // var header=document.getElementById('main-header');
 // header.style.borderBottom = 'solid 3px #000';
 
-var addItem=document.getElementsByClassName('title');
-console.log(addItem);
-addItem[0].style.fontWeight = 'bold';
-addItem[0].style.color = 'green';
+// var addItem=document.getElementsByClassName('title');
+// console.log(addItem);
+// addItem[0].style.fontWeight = 'bold';
+// addItem[0].style.color = 'green';
+
+// GET ELEMENTS BY CLASS NAME
+
+var items = document.getElementsByClassName('list-group-item');
+console.log(items);
+console.log(items[1]);
+// items[1].textContent='hello2';
+// items[1].style.fontWeight = 'bold';
+// items[1].style.backgroundColor = 'yellow';
+// items.style.backgroundColor = 'grey'; //it does not work as the lists are a collection or arrays
+//so we can only work through individually..for that we have to for loop instead.
+
+// for(var i=0;i<items.length;i++){
+//     items[i].style.backgroundColor='grey';
+// }
+
+items[2].style.backgroundColor = 'green';
+
+for(let i=0;i<items.length;i++){
+    items[i].style.fontWeight = 'bold';
+}
