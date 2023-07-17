@@ -60,8 +60,8 @@
 // }
 
 // GET ELEMENTS BY TAG NAME
-var li = document.getElementsByTagName('li');
-console.log(li);
+// var li = document.getElementsByTagName('li');
+// console.log(li);
 // li[1].textContent='hello';
 // li[1].style.fontWeight='bold';
 // li[1].style.backgroundColor = 'yellow';
@@ -70,5 +70,45 @@ console.log(li);
 //     li[i].style.backgroundColor = 'red';
 // }
 
-li[4].style.fontWeight ='bold';
-li[4].style.color='green';
+// li[4].style.fontWeight ='bold';
+// li[4].style.color='green';
+
+// QUERY SELECTOR
+// var header = document.querySelector('#main-header');
+// header.style.borderBottom = 'solid 4px red';
+
+// var input = document.querySelector('input');
+// input.value="hello world"; //although it has two inputs it always select the first one as input
+
+// var submit = document.querySelector('input[type="submit"]');
+// submit.value = "send";
+
+// var item = document.querySelector('.list-group-item');
+// item.style.color = 'red';
+
+// var lastItem = document.querySelector('.list-group-item:last-child');
+// lastItem.style.color="green";
+
+var secondItem = document.querySelector('.list-group-item:nth-child(2');
+// secondItem.style.color='coral';
+secondItem.style.backgroundColor="green";
+var listItemToHide = document.querySelector('.list-group-item:nth-child(2)');
+
+// Set the display property to 'none' to make it invisible
+listItemToHide.style.display = 'none';
+// these all are css pseudo selectors
+
+// QUERY SELECTOR ALL
+// SIMILAR TO GETELEMENTBYCLASS OR TAG NAME..GONNA GRAB MORE THAN ONE THING
+// var titles = document.querySelectorAll('.title');
+// console.log(titles); //can use array functions
+// titles[0].textContent="nice";
+
+// var odd=document.querySelectorAll('li:nth-child(odd)');
+// var even=document.querySelectorAll('li:nth-child(even)');
+
+// for(var i=0;i<odd.length;i++){
+//     odd[i].style.backgroundColor = "red";
+//     even[i].style.backgroundColor = "pink";
+
+// }
