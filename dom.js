@@ -89,13 +89,13 @@
 // var lastItem = document.querySelector('.list-group-item:last-child');
 // lastItem.style.color="green";
 
-var secondItem = document.querySelector('.list-group-item:nth-child(2');
+// var secondItem = document.querySelector('.list-group-item:nth-child(2');
 // secondItem.style.color='coral';
-secondItem.style.backgroundColor="green";
-var listItemToHide = document.querySelector('.list-group-item:nth-child(2)');
+// secondItem.style.backgroundColor="green";
+// var listItemToHide = document.querySelector('.list-group-item:nth-child(2)');
 
 // Set the display property to 'none' to make it invisible
-listItemToHide.style.display = 'none';
+// listItemToHide.style.display = 'none';
 // these all are css pseudo selectors
 
 // QUERY SELECTOR ALL
@@ -104,11 +104,14 @@ listItemToHide.style.display = 'none';
 // console.log(titles); //can use array functions
 // titles[0].textContent="nice";
 
-// var odd=document.querySelectorAll('li:nth-child(odd)');
+var odd=document.querySelectorAll('li:nth-child(odd)');
 // var even=document.querySelectorAll('li:nth-child(even)');
 
-// for(var i=0;i<odd.length;i++){
-//     odd[i].style.backgroundColor = "red";
+for(var i=0;i<odd.length;i++){
+    odd[i].style.backgroundColor = "green";
 //     even[i].style.backgroundColor = "pink";
 
-// }
+}
+
+var listItems = document.querySelectorAll('.list-group-item');
+listItems[1].style.color = 'green';
